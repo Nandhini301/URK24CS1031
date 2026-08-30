@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Elegance Fashion Boutique</title>
+
+</head>
+
+
+<body bgcolor="lavenderblush">
+
+
+<center>
+
+
+<font color="deeppink" size="7">
+<b> ELEGANCE FASHION BOUTIQUE </b>
+</font>
+
+
+<br><br>
+
+
+<font color="purple" size="5">
+
+<b> Where Style Meets Elegance </b>
+
+</font>
+
+
+<br><br>
+
+
+<marquee bgcolor="pink" behavior="alternate">
+
+ Welcome to Elegance Boutique! | 50% OFF | New Arrivals | Free Gift Wrapping | Happy Shopping 
+
+</marquee>
+
+
+<hr color="deeppink" size="4">
+
+
+<table border="2" width="90%" cellpadding="10" bgcolor="lightpink">
+
+<tr bgcolor="pink">
+
+<th><font size="6"> About Our Boutique </font></th>
+
+</tr>
+
+
+<tr>
+
+<td>
+
+<font size="5">
+
+Elegance Fashion Boutique offers trendy, stylish and beautiful
+clothing for women of all ages.
+
+We provide quality fashion products at affordable prices with
+fast delivery and special offers.
+
+</font>
+
+</td>
+
+</tr>
+
+</table>
+
+
+<br>
+
+
+<table border="2" width="90%" cellpadding="10" bgcolor="lightcyan">
+
+
+<tr bgcolor="plum">
+
+<th colspan="2"><font size="6"> Our Fashion Collection </font></th>
+
+</tr>
+
+
+<tr>
+
+<td>
+
+<font size="5">
+
+<ul>
+
+<li> Designer Sarees </li>
+
+<li> Kurtis </li>
+
+<li> Western Dresses </li>
+
+<li> Party Wear </li>
+
+<li> Casual Wear </li>
+
+</ul>
+
+</font>
+
+</td>
+
+
+<td>
+
+<font size="5">
+
+<ul>
+
+<li> Handbags </li>
+
+<li> Jewellery </li>
+
+<li> Tops </li>
+
+<li> Skirts </li>
+
+<li> Fashion Accessories </li>
+
+</ul>
+
+</font>
+
+</td>
+
+</tr>
+
+
+</table>
+
+
+<br>
+
+
+<table border="2" width="90%" bgcolor="lavender" cellpadding="15">
+
+<tr>
+
+<td>
+
+
+<form>
+
+
+<fieldset>
+
+
+<legend><font size="6"><b> Fashion Order Form </b></font></legend>
+
+
+<font size="5">
+
+
+Customer Name:<br>
+
+<input type="text" size="40"><br><br>
+
+
+Email:<br>
+
+<input type="email" size="40"><br><br>
+
+
+Phone Number:<br>
+
+<input type="tel" size="40"><br><br>
+
+
+Age:<br>
+
+<input type="number" min="10" max="80"><br><br>
+
+
+Delivery Date:<br>
+
+<input type="date"><br><br>
+
+
+Select Product:<br>
+
+<input type="radio" name="product"> Saree
+
+<input type="radio" name="product"> Kurti
+
+<input type="radio" name="product"> Dress
+
+<input type="radio" name="product"> Handbag
+
+
+<br><br>
+
+
+Fashion Category:<br>
+
+<input type="checkbox"> Traditional Wear
+
+<input type="checkbox"> Western Wear
+
+<input type="checkbox"> Party Wear
+
+<input type="checkbox"> Accessories
+
+
+<br><br>
+
+
+Brand:<br>
+
+
+<select>
+
+<option>Manyavar</option>
+
+<option>W for Woman</option>
+
+<option>FabIndia</option>
+
+<option>Biba</option>
+
+<option>AND</option>
+
+</select>
+
+
+<br><br>
+
+
+City:<br>
+
+
+<input list="city">
+
+
+<datalist id="city">
+
+<option>Chennai</option>
+
+<option>Coimbatore</option>
+
+<option>Madurai</option>
+
+<option>Salem</option>
+
+<option>Trichy</option>
+
+</datalist>
+
+
+<br><br>
+
+
+Dress Colour:<br>
+
+<input type="color">
+
+
+<br><br>
+
+
+Rate Our Boutique:<br>
+
+<input type="range" min="1" max="10">
+
+
+<br><br>
+
+
+Special Message:<br>
+
+<textarea rows="4" cols="40"></textarea>
+
+
+<br><br>
+
+
+<input type="submit" value=" Place Order">
+
+<input type="reset" value=" Clear Form">
+
+
+</font>
+
+
+</fieldset>
+
+
+</form>
+
+
+</td>
+
+</tr>
+
+</table>
+
+
+<br>
+
+
+<table border="2" width="90%" bgcolor="lightgreen">
+
+<tr bgcolor="pink">
+
+<th><font size="6"> Why Choose Us? </font></th>
+
+</tr>
+
+
+<tr>
+
+<td>
+
+
+<font size="5">
+
+
+ Latest Fashion Trends<br><br>
+
+
+ Affordable Prices<br><br>
+
+
+ Premium Quality Products<br><br>
+
+
+ Free Gift Wrapping<br><br>
+
+
+ Fast Delivery<br><br>
+
+
+ Friendly Customer Support
+
+
+</font>
+
+
+</td>
+
+</tr>
+
+
+</table>
+
+
+<br>
+
+
+<details>
+
+<summary><font size="5"><b> Today's Special Offer </b></font></summary>
+
+<br>
+
+<font size="5">
+
+Buy 2 Dresses and Get Extra 20% Discount!<br><br>
+
+Free Gift Wrapping for Every Order.
+
+</font>
+
+</details>
+
+
+<br><br>
+
+
+<marquee bgcolor="lightblue">
+
+ Thank You for Visiting Elegance Fashion Boutique! Stay Stylish! 
+
+</marquee>
+
+
+<hr color="purple">
+
+
+<font color="deeppink" size="6">
+
+ Fashion is the Art of Expressing Yourself 
+
+</font>
+
+
+<br><br>
+
+
+<font size="5">
+
+<b>© 2026 Elegance Fashion Boutique</b><br>
+
+Your Favourite Fashion Destination
+
+</font>
+
+
+</center>
+
+
+</body>
+
+</html>
