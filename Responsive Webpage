@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Elegant Fashion Boutique</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #fdf7f8;
+            line-height: 1.6;
+        }
+
+        /* Header */
+
+        header {
+            background: #8b3a62;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 34px;
+        }
+
+        header p {
+            margin-top: 5px;
+            font-size: 17px;
+        }
+
+        /* Navigation */
+
+        nav {
+            background: #222;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav li {
+            padding: 15px 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav li:hover {
+            background: #8b3a62;
+        }
+
+        /* Hero */
+
+        .hero {
+            background: #f7dce7;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .hero h2 {
+            color: #8b3a62;
+            font-size: 32px;
+        }
+
+        .hero p {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+
+        /* Main Container */
+
+        .container {
+            display: flex;
+            padding: 25px;
+            gap: 25px;
+        }
+
+        /* Sidebar */
+
+        .sidebar {
+            width: 25%;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .sidebar h3 {
+            color: #8b3a62;
+            margin-bottom: 10px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+        }
+
+        .sidebar li {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .sidebar li:hover {
+            background: #f7dce7;
+        }
+
+        /* Content */
+
+        .content {
+            width: 75%;
+        }
+
+        .content h2 {
+            color: #8b3a62;
+        }
+
+        /* Product Cards */
+
+        .cards {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .card {
+            flex: 1;
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 8px #ccc;
+        }
+
+        .card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .card h3 {
+            margin-top: 10px;
+            color: #8b3a62;
+        }
+
+        .card p {
+            margin-top: 8px;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #333;
+            margin-top: 8px;
+        }
+
+        /* Button */
+
+        button {
+            background: #8b3a62;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            margin-top: 12px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #5f2442;
+        }
+
+        /* Footer */
+
+        footer {
+            background: #222;
+            color: white;
+            padding: 25px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Tablet */
+
+        @media screen and (max-width: 992px) {
+
+            .container {
+                flex-direction: column;
+            }
+
+            .sidebar,
+            .content {
+                width: 100%;
+            }
+
+            .cards {
+                flex-wrap: wrap;
+            }
+
+            .card {
+                width: 45%;
+            }
+
+        }
+
+        /* Mobile */
+
+        @media screen and (max-width: 768px) {
+
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav li {
+                padding: 12px;
+            }
+
+            .cards {
+                flex-direction: column;
+            }
+
+            .card {
+                width: 100%;
+            }
+
+            .hero {
+                padding: 40px 20px;
+            }
+
+            .hero h2 {
+                font-size: 26px;
+            }
+
+        }
+
+        /* Small Mobile */
+
+        @media screen and (max-width: 480px) {
+
+            header h1 {
+                font-size: 25px;
+            }
+
+            .hero h2 {
+                font-size: 22px;
+            }
+
+            button {
+                width: 100%;
+            }
+
+            .container {
+                padding: 15px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- Header -->
+
+    <header>
+
+        <h1>Elegant Fashion Boutique</h1>
+
+        <p>Style • Elegance • Confidence</p>
+
+    </header>
+
+
+    <!-- Navigation -->
+
+    <nav>
+
+        <ul>
+
+            <li><a href="#">Home</a></li>
+
+            <li><a href="#">Women</a></li>
+
+            <li><a href="#">Men</a></li>
+
+            <li><a href="#">Accessories</a></li>
+
+            <li><a href="#">Contact</a></li>
+
+        </ul>
+
+    </nav>
+
+
+    <!-- Hero Section -->
+
+    <section class="hero">
+
+        <h2>Discover Your Signature Style</h2>
+
+        <p>
+            Explore the latest fashion trends and find
+            outfits that express your unique personality.
+        </p>
+
+    </section>
+
+
+    <!-- Main Container -->
+
+    <div class="container">
+
+
+        <!-- Sidebar -->
+
+        <div class="sidebar">
+
+            <h3>Shop Categories</h3>
+
+            <ul>
+
+                <li>Women's Wear</li>
+
+                <li>Men's Wear</li>
+
+                <li>Traditional Wear</li>
+
+                <li>Western Wear</li>
+
+                <li>Accessories</li>
+
+                <li>Footwear</li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- Content -->
+
+        <div class="content">
+
+            <h2>Latest Fashion Collection</h2>
+
+            <p>
+                Discover our carefully selected collection
+                of stylish and elegant fashion pieces.
+            </p>
+
+
+            <!-- Product Cards -->
+
+            <div class="cards">
+
+
+                <!-- Product 1 -->
+
+                <div class="card">
+
+                    <img src="dress1.jpg"
+                         alt="Elegant Dress">
+
+                    <h3>Elegant Dress</h3>
+
+                    <p>
+                        Beautiful and comfortable dress
+                        perfect for special occasions.
+                    </p>
+
+                    <p class="price">₹1,499</p>
+
+                    <button>Shop Now</button>
+
+                </div>
+
+
+                <!-- Product 2 -->
+
+                <div class="card">
+
+                    <img src="dress2.jpg"
+                         alt="Traditional Outfit">
+
+                    <h3>Traditional Outfit</h3>
+
+                    <p>
+                        Stylish traditional wear designed
+                        for celebrations and festivals.
+                    </p>
+
+                    <p class="price">₹1,999</p>
+
+                    <button>Shop Now</button>
+
+                </div>
+
+
+                <!-- Product 3 -->
+
+                <div class="card">
+
+                    <img src="dress3.jpg"
+                         alt="Fashion Accessories">
+
+                    <h3>Fashion Accessories</h3>
+
+                    <p>
+                        Complete your look with our
+                        beautiful collection of accessories.
+                    </p>
+
+                    <p class="price">₹799</p>
+
+                    <button>Shop Now</button>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <h3>Elegant Fashion Boutique</h3>
+
+        <p>
+            Fashion that makes you feel confident.
+        </p>
+
+        <p>
+            © 2026 Elegant Fashion Boutique
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
