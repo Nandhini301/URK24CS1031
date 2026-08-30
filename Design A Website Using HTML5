@@ -1,162 +1,502 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fashion Boutique</title>
-    <style>
-        body {
-            background-color: #fff0f5;
-            color: #4b0082;
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        h1, h2 {
-            color: #c71585;
-        }
-        table {
-            width: 80%;
-            border-collapse: collapse;
-        }
-        table, th, td {
-            border: 1px solid black;
-            padding: 10px;
-            text-align: center;
-        }
-        img {
-            border-radius: 10px;
-        }
-        div {
-            margin-bottom: 30px;
-        }
-        a {
-            color: blue;
-        }
-    </style>
+    <title>Elegance Fashion Boutique</title>
 </head>
-<body>
-    <!-- Header Section -->
-    <div id="top">
-        <h1 align="center">Fashion Boutique</h1>
-        <p>
-            Welcome to Fashion Boutique, your destination for trendy clothing,
-            stylish accessories, and elegant fashion collections.
-            We offer modern outfits for every occasion at affordable prices.
-        </p>
-    </div>
-    <!-- Navigation Section -->
-    <div>
-        <h2>Quick Links</h2>
-        <a href="https://www.myntra.com" target="_blank">Visit Myntra</a>
-        <br><br>
-        <a href="#collection">Go to Collection Section</a>
-        <br><br>
-        <a href="#contact">Bookmark to Contact Section</a>
-        <br><br>
-        <a href="mailto:fashionboutique@gmail.com">Email Us</a>
-        <br><br>
-        <a href="tel:+919876543210">Call Us</a>
-    </div>
-    <!-- Image Section -->
-    <div>
-        <h2>Fashion Collection</h2>
-        <a href="https://www.myntra.com" target="_blank">
-            <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=600"
-                alt="Fashion Boutique" width="400">
-        </a>
-        <p>Click the image to explore more fashion products.</p>
-    </div>
-    <!-- Collection Section -->
-    <div id="collection">
-        <h2>Our Collections</h2>
-        <table>
-            <tr>
-                <th>Category</th>
-                <th>Product</th>
-                <th>Price</th>
-            </tr>
-            <tr>
-                <td>Women's Wear</td>
-                <td>Designer Dress</td>
-                <td>₹1999</td>
-            </tr>
-            <tr>
-                <td>Men's Wear</td>
-                <td>Formal Shirt</td>
-                <td>₹1299</td>
-            </tr>
-            <tr>
-                <td>Accessories</td>
-                <td>Handbag</td>
-                <td>₹899</td>
-            </tr>
-        </table>
-    </div>
-    <!-- Description List Section -->
-    <div>
-        <h2>Fashion Terms</h2>
-        <dl>
-            <dt><b>Casual Wear</b></dt>
-            <dd>Comfortable clothing for everyday use.</dd>
-            <dt><b>Formal Wear</b></dt>
-            <dd>Professional outfits for office and meetings.</dd>
-            <dt><b>Accessories</b></dt>
-            <dd>Fashion items like bags, belts, watches and jewelry.</dd>
-        </dl>
-    </div>
-    <!-- Ordered Nested List -->
-    <div>
-        <h2>Shopping Categories</h2>
-        <ol>
-            <li>Women's Collection
-                <ol>
-                    <li>Dresses</li>
-                    <li>Tops</li>
-                    <li>Jeans</li>
-                </ol>
-            </li>
-            <li>Men's Collection
-                <ol>
-                    <li>Shirts</li>
-                    <li>Trousers</li>
-                    <li>Jackets</li>
-                </ol>
-            </li>
-        </ol>
-    </div>
-    <!-- Unordered Nested List -->
-    <div>
-        <h2>Why Choose Us?</h2>
-        <ul>
-            <li>Latest Fashion
-                <ul>
-                    <li>Trending Styles</li>
-                    <li>Seasonal Collections</li>
-                </ul>
-            </li>
-            <li>Customer Benefits
-                <ul>
-                    <li>Fast Delivery</li>
-                    <li>Easy Returns</li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-    <!-- Contact Section -->
-    <div id="contact">
-        <h2>Contact Us</h2>
-        <p><b>Fashion Boutique</b></p>
-        <p>Email: fashionboutique@gmail.com</p>
-        <p>Phone: +91 9876543210</p>
-        <p>Address: Coimbatore, Tamil Nadu</p>
-        <a href="#top">Back to Top</a>
-    </div>
-    <!-- Footer Section -->
-    <div>
-        <hr>
-        <p align="center">
-            © 2026 Fashion Boutique | Designed using HTML5
-        </p>
-    </div>
+
+<body bgcolor="#FFF0F5">
+
+<a name="top"></a>
+
+<center>
+
+<font color="#C71585" size="7">
+<b>👗 ELEGANCE FASHION BOUTIQUE 👗</b>
+</font>
+
+<br>
+
+<font color="#8B008B" size="5">
+<b>✨ Style • Beauty • Confidence ✨</b>
+</font>
+
+<br><br>
+
+<marquee bgcolor="#FFD1DC" behavior="alternate">
+🎉 Welcome to Elegance Fashion Boutique | Flat 50% OFF | New Arrivals | Free Delivery Above ₹1500 🎁
+</marquee>
+
+</center>
+
+<hr color="#C71585" size="4">
+
+<center>
+
+<table border="2" cellpadding="10" bgcolor="#F8C8DC" width="90%">
+
+<tr align="center">
+
+<td>
+<a href="#home"><b>🏠 Home</b></a>
+</td>
+
+<td>
+<a href="#collections"><b>👗 Collections</b></a>
+</td>
+
+<td>
+<a href="#gallery"><b>🖼 Gallery</b></a>
+</td>
+
+<td>
+<a href="#offers"><b>🎁 Offers</b></a>
+</td>
+
+<td>
+<a href="#contact"><b>📞 Contact</b></a>
+</td>
+
+</tr>
+
+</table>
+
+</center>
+
+<hr>
+
+<h2 id="home">
+<font color="#C71585">🌸 Welcome to Elegance Boutique</font>
+</h2>
+
+<p>
+
+Welcome to <b>Elegance Fashion Boutique</b>, your destination for
+<i>beautiful, trendy and stylish fashion collections</i>.
+
+</p>
+
+<p>
+
+We offer <u>Women's Wear, Dresses, Sarees, Kurtis,
+Western Wear, Accessories and Party Wear</u> for every occasion.
+
+</p>
+
+<center>
+
+<table border="2" cellpadding="10" bgcolor="#FFE4E1" width="80%">
+
+<tr bgcolor="#F8C8DC">
+
+<th colspan="3">
+⭐ Why Choose Our Boutique? ⭐
+</th>
+
+</tr>
+
+<tr align="center">
+
+<td>👗 Latest Fashion</td>
+
+<td>💎 Premium Quality</td>
+
+<td>💰 Affordable Prices</td>
+
+</tr>
+
+<tr align="center">
+
+<td>🚚 Fast Delivery</td>
+
+<td>🎁 Gift Packaging</td>
+
+<td>❤️ Customer Satisfaction</td>
+
+</tr>
+
+</table>
+
+</center>
+
+<hr>
+
+<center>
+
+<h2>
+<font color="#8B008B">✨ Featured Collection ✨</font>
+</h2>
+
+<a href="#collections">
+
+<img src="fashion.jpg"
+width="350"
+height="250"
+alt="Fashion Collection">
+
+</a>
+
+</center>
+
+<hr>
+
+<h2 id="collections">
+<font color="#C71585">👗 Our Fashion Collections</font>
+</h2>
+
+<table border="2" cellpadding="10" cellspacing="0" width="100%">
+
+<tr bgcolor="#F8C8DC">
+
+<th>Product</th>
+
+<th>Category</th>
+
+<th>Price</th>
+
+<th>Rating</th>
+
+</tr>
+
+<tr align="center">
+
+<td>👗 Floral Maxi Dress</td>
+
+<td>Western Wear</td>
+
+<td>₹1499</td>
+
+<td>⭐⭐⭐⭐⭐</td>
+
+</tr>
+
+<tr align="center">
+
+<td>🥻 Designer Saree</td>
+
+<td>Traditional Wear</td>
+
+<td>₹2499</td>
+
+<td>⭐⭐⭐⭐⭐</td>
+
+</tr>
+
+<tr align="center">
+
+<td>👚 Designer Kurti</td>
+
+<td>Ethnic Wear</td>
+
+<td>₹999</td>
+
+<td>⭐⭐⭐⭐</td>
+
+</tr>
+
+<tr align="center">
+
+<td>👗 Party Wear Gown</td>
+
+<td>Party Wear</td>
+
+<td>₹2999</td>
+
+<td>⭐⭐⭐⭐⭐</td>
+
+</tr>
+
+<tr align="center">
+
+<td>👜 Handbag</td>
+
+<td>Accessories</td>
+
+<td>₹1299</td>
+
+<td>⭐⭐⭐⭐</td>
+
+</tr>
+
+</table>
+
+<hr>
+
+<h2>
+<font color="#C71585">🌷 Fashion Categories</font>
+</h2>
+
+<dl>
+
+<dt>
+<b>Western Wear</b>
+</dt>
+
+<dd>
+Trendy dresses, tops, skirts and stylish outfits for modern looks.
+</dd>
+
+<br>
+
+<dt>
+<b>Traditional Wear</b>
+</dt>
+
+<dd>
+Beautiful sarees, kurtis and ethnic outfits for special occasions.
+</dd>
+
+<br>
+
+<dt>
+<b>Party Wear</b>
+</dt>
+
+<dd>
+Elegant gowns and designer outfits for parties and celebrations.
+</dd>
+
+<br>
+
+<dt>
+<b>Accessories</b>
+</dt>
+
+<dd>
+Handbags, jewellery and fashion accessories to complete your look.
+</dd>
+
+</dl>
+
+<hr>
+
+<h2>
+<font color="#C71585">🛍 Shopping Steps</font>
+</h2>
+
+<ol>
+
+<li>Browse Our Latest Collection</li>
+
+<li>Select Your Favourite Outfit</li>
+
+<li>Choose Your Size</li>
+
+<li>Add to Cart</li>
+
+<li>Proceed to Checkout</li>
+
+<li>Enjoy Your Fashion Delivery</li>
+
+</ol>
+
+<hr>
+
+<h2>
+<font color="#C71585">💎 Boutique Facilities</font>
+</h2>
+
+<ul>
+
+<li>🚚 Home Delivery</li>
+
+<li>🎁 Gift Wrapping</li>
+
+<li>💳 Multiple Payment Options</li>
+
+<li>📞 Customer Support</li>
+
+<li>🔄 Easy Returns</li>
+
+<li>📏 Multiple Sizes Available</li>
+
+</ul>
+
+<hr>
+
+<h2 id="offers">
+<font color="red">🎉 Today's Fashion Offers</font>
+</h2>
+
+<ul>
+
+<li>💰 Flat 50% OFF on Selected Dresses</li>
+
+<li>👗 Buy 2 Kurtis & Get Extra Discount</li>
+
+<li>🎁 Free Gift Wrapping</li>
+
+<li>🚚 Free Delivery Above ₹1500</li>
+
+<li>💎 Special Discounts for New Customers</li>
+
+</ul>
+
+<hr>
+
+<h2 id="gallery">
+<font color="#C71585">🖼 Fashion Gallery</font>
+</h2>
+
+<center>
+
+<img src="dress.jpg"
+width="250"
+height="200"
+alt="Dress">
+
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+<img src="saree.jpg"
+width="250"
+height="200"
+alt="Saree">
+
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+<img src="kurti.jpg"
+width="250"
+height="200"
+alt="Kurti">
+
+</center>
+
+<hr>
+
+<h2>
+<font color="#8B008B">⭐ Customer Reviews</font>
+</h2>
+
+<table border="2" width="100%" cellpadding="8">
+
+<tr bgcolor="#F8C8DC">
+
+<th>Name</th>
+
+<th>Review</th>
+
+</tr>
+
+<tr>
+
+<td>Priya</td>
+
+<td>⭐⭐⭐⭐⭐ Beautiful collection and great quality!</td>
+
+</tr>
+
+<tr>
+
+<td>Shreya</td>
+
+<td>⭐⭐⭐⭐ Trendy designs at affordable prices!</td>
+
+</tr>
+
+<tr>
+
+<td>Ananya</td>
+
+<td>⭐⭐⭐⭐⭐ Loved the dress and fast delivery!</td>
+
+</tr>
+
+</table>
+
+<hr>
+
+<h2>
+<font color="#8B008B">❓ Frequently Asked Questions</font>
+</h2>
+
+<details>
+
+<summary>
+<b>Do you provide home delivery?</b>
+</summary>
+
+Yes. We provide home delivery across Tamil Nadu.
+
+</details>
+
+<br>
+
+<details>
+
+<summary>
+<b>Do you provide different sizes?</b>
+</summary>
+
+Yes. We have different sizes depending on the product.
+
+</details>
+
+<br>
+
+<details>
+
+<summary>
+<b>Can I return a product?</b>
+</summary>
+
+Yes. Eligible products can be returned according to our return policy.
+
+</details>
+
+<br>
+
+<details>
+
+<summary>
+<b>Do you provide gift wrapping?</b>
+</summary>
+
+Yes. Gift wrapping is available for special occasions.
+
+</details>
+
+<hr>
+
+<h2 id="contact">
+<font color="#C71585">📞 Contact Us</font>
+</h2>
+
+<p>
+<b>Email:</b> eleganceboutique@gmail.com
+</p>
+
+<p>
+<b>Phone:</b> +91 9876543210
+</p>
+
+<p>
+<b>Address:</b> Elegance Fashion Boutique, Coimbatore, Tamil Nadu
+</p>
+
+<hr>
+
+<center>
+
+<marquee bgcolor="#FFD1DC">
+
+💖 Thank You for Visiting Elegance Fashion Boutique! Stay Stylish! 👗✨
+
+</marquee>
+
+<br><br>
+
+<a href="#top">
+<b>⬆ Back to Top</b>
+</a>
+
+<br><br>
+
+<font color="#C71585" size="5">
+
+<b>👗 Fashion is the Art of Expressing Yourself! 💎</b>
+
+</font>
+
+</center>
+
 </body>
-</html>
+</html>  
