@@ -1,0 +1,540 @@
+//HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegant Fashion Boutique</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="validate.js" defer></script>
+</head>
+<body>
+
+<header>
+    <div class="logo">ÉLÉGANT <span>BOUTIQUE</span></div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#collection">Collections</a>
+        <a href="#contact">Contact</a>
+        <a href="#signup">Join Us</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <p class="tagline">STYLE THAT SPEAKS</p>
+        <h1>Discover Your<br>Signature Style</h1>
+        <p>
+            Explore timeless fashion, elegant outfits and
+            beautiful collections designed to express your individuality.
+        </p>
+        <a href="#collection" class="btn">Explore Collection</a>
+    </div>
+</section>
+
+<section class="section" id="about">
+    <h2>Welcome to Élégant</h2>
+    <p class="about-text">
+        Élégant Fashion Boutique celebrates style, confidence
+        and individuality. Discover carefully selected fashion
+        inspiration for every occasion, from everyday wear to
+        special celebrations.
+    </p>
+</section>
+
+<section class="section collections" id="collection">
+    <h2>Our Collections</h2>
+    <p class="subtitle">Find the look that feels like you.</p>
+
+    <div class="product-container">
+        <article class="product-card">
+            <img
+                src="C:\Users\nandh\OneDrive\Desktop\WEB TECH\ex5\1st image"
+                alt="Elegant women's fashion outfit">
+            <div class="product-info">
+                <h3>Elegant Dresses</h3>
+                <p>Graceful styles for every occasion.</p>
+                <a href="#signup">Discover More →</a>
+            </div>
+        </article>
+
+        <article class="product-card">
+            <img
+                src="C:\Users\nandh\OneDrive\Desktop\WEB TECH\ex5\image 2"
+                alt="Modern women's fashion">
+            <div class="product-info">
+                <h3>Casual Wear</h3>
+                <p>Comfort meets contemporary style.</p>
+                <a href="#signup">Discover More →</a>
+            </div>
+        </article>
+
+        <article class="product-card">
+            <img
+                src="C:\Users\nandh\OneDrive\Desktop\WEB TECH\ex5\image 3"
+                alt="Fashion clothing collection">
+            <div class="product-info">
+                <h3>New Arrivals</h3>
+                <p>Fresh looks for your wardrobe.</p>
+                <a href="#signup">Discover More →</a>
+            </div>
+        </article>
+    </div>
+</section>
+
+<section class="style-section">
+    <h2>Fashion Is an Expression of You</h2>
+    <p>
+        Be confident. Be unique. Be beautifully yourself.
+    </p>
+    <a href="#signup" class="btn">Join Our Community</a>
+</section>
+
+<section class="signup-section" id="signup">
+    <div class="signup-box">
+        <h2>Join Our Fashion Community</h2>
+        <p>Sign up for boutique updates and style inspiration.</p>
+
+        <form id="signupForm" novalidate>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Enter your name">
+            <span class="error" id="nameError"></span>
+
+            <label for="email">Email Address</label>
+            <input type="text" id="email" placeholder="Enter your email">
+            <span class="error" id="emailError"></span>
+
+            <label for="password">Password</label>
+            <input type="password" id="password"
+                   placeholder="Minimum 8 characters">
+            <span class="error" id="passError"></span>
+
+            <button type="submit" class="btn signup-btn">Sign Up</button>
+
+            <p id="successMessage" class="success"></p>
+        </form>
+    </div>
+</section>
+
+<section class="contact-section" id="contact">
+    <h2>Visit Our World of Fashion</h2>
+    <p>Discover your style and let your confidence shine.</p>
+    <p>Email: hello@elegantboutique.example</p>
+</section>
+
+<footer>
+    <p>© 2026 Élégant Fashion Boutique</p>
+    <p>Elegance in every detail.</p>
+</footer>
+
+</body>
+</html>
+ //CSS
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fffaf8;
+    color: #383036;
+    line-height: 1.6;
+}
+
+header {
+    background: #8b3a62;
+    color: white;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    display: block;
+    font-size: 11px;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #f5d4df;
+}
+
+.hero {
+    min-height: 460px;
+    padding: 85px 8%;
+    display: flex;
+    align-items: center;
+    background:
+        linear-gradient(90deg,
+        rgba(48, 24, 38, 0.83),
+        rgba(48, 24, 38, 0.15)),
+        url("https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1600&q=85")
+        center 35% / cover no-repeat;
+    color: white;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.tagline {
+    letter-spacing: 4px;
+    color: #f5c6d7;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-content > p:not(.tagline) {
+    margin-bottom: 28px;
+}
+
+.btn {
+    display: inline-block;
+    background: #8b3a62;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.btn:hover {
+    background: #692747;
+}
+
+.section {
+    padding: 65px 8%;
+    text-align: center;
+}
+
+.section h2,
+.style-section h2,
+.contact-section h2 {
+    color: #8b3a62;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.about-text {
+    max-width: 750px;
+    margin: auto;
+    color: #75666e;
+}
+
+.subtitle {
+    color: #75666e;
+    margin-bottom: 30px;
+}
+
+.collections {
+    background: #f8eeef;
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+    text-align: left;
+}
+
+.product-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 18px rgba(80, 35, 56, 0.09);
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+}
+
+.product-card img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    display: block;
+}
+
+.product-info {
+    padding: 22px;
+}
+
+.product-info h3 {
+    color: #8b3a62;
+    margin-bottom: 8px;
+}
+
+.product-info p {
+    color: #75666e;
+    margin-bottom: 15px;
+}
+
+.product-info a {
+    color: #8b3a62;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.style-section {
+    text-align: center;
+    padding: 65px 8%;
+    background: #f0dce4;
+}
+
+.style-section p {
+    margin-bottom: 25px;
+}
+
+.signup-section {
+    padding: 65px 20px;
+    background: #fffaf8;
+}
+
+.signup-box {
+    max-width: 500px;
+    margin: auto;
+    padding: 35px;
+    background: white;
+    border: 1px solid #efdce4;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(80, 35, 56, 0.08);
+}
+
+.signup-box h2 {
+    color: #8b3a62;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.signup-box > p {
+    text-align: center;
+    color: #75666e;
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-top: 14px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border: 1px solid #d9c6cf;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+form input:focus {
+    outline: 2px solid #d8a6bc;
+    border-color: #8b3a62;
+}
+
+.error {
+    display: block;
+    color: #c62845;
+    font-size: 13px;
+    min-height: 18px;
+}
+
+.success {
+    color: #21834a;
+    font-weight: bold;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.signup-btn {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.contact-section {
+    padding: 45px 8%;
+    text-align: center;
+    background: #f8eeef;
+}
+
+.contact-section p {
+    margin-top: 8px;
+}
+
+footer {
+    background: #502438;
+    color: white;
+    text-align: center;
+    padding: 22px;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    header {
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero {
+        padding: 65px 7%;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .product-container {
+        grid-template-columns: 1fr;
+    }
+
+    .product-card img {
+        height: 350px;
+    }
+
+    .section h2,
+    .style-section h2,
+    .contact-section h2 {
+        font-size: 25px;
+    }
+
+    .signup-box {
+        padding: 25px;
+    }
+}
+//JAVASCRIPT
+const form = document.getElementById("signupForm");
+
+const nameInput = document.getElementById("name");
+const emailInput = document.getElementById("email");
+const passwordInput = document.getElementById("password");
+
+// Check whether a field is empty
+function isEmpty(value) {
+    return value.trim() === "";
+}
+
+// Validate the name
+function isValidName(name) {
+    return name.trim().length >= 3;
+}
+
+// Validate the email address
+function isValidEmail(email) {
+    const pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return pattern.test(email);
+}
+
+// Validate the password
+function isStrongPassword(password) {
+    return password.length >= 8;
+}
+
+// Display error messages
+function showError(id, message) {
+    document.getElementById(id).textContent = message;
+}
+
+// Clear old error messages
+function clearErrors() {
+    document.getElementById("nameError").textContent = "";
+    document.getElementById("emailError").textContent = "";
+    document.getElementById("passError").textContent = "";
+    document.getElementById("successMessage").textContent = "";
+}
+
+// Validate all form fields
+function validateForm() {
+    let valid = true;
+
+    clearErrors();
+
+    const name = nameInput.value.trim();
+    const email = emailInput.value.trim();
+    const password = passwordInput.value;
+
+    if (isEmpty(name)) {
+        showError("nameError", "Name is required");
+        valid = false;
+    } else if (!isValidName(name)) {
+        showError("nameError", "Enter at least 3 characters");
+        valid = false;
+    }
+
+    if (isEmpty(email)) {
+        showError("emailError", "Email is required");
+        valid = false;
+    } else if (!isValidEmail(email)) {
+        showError("emailError", "Enter a valid email address");
+        valid = false;
+    }
+
+    if (isEmpty(password)) {
+        showError("passError", "Password is required");
+        valid = false;
+    } else if (!isStrongPassword(password)) {
+        showError("passError", "Password must contain at least 8 characters");
+        valid = false;
+    }
+
+    return valid;
+}
+
+// Handle signup form submission
+form.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    if (validateForm()) {
+        document.getElementById("successMessage").textContent =
+            "Signup successful! Welcome to Élégant Boutique.";
+
+        alert("Signup successful!");
+
+        form.reset();
+    }
+});
