@@ -1,0 +1,903 @@
+//HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegant Fashion Boutique</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">ÉLÉGANCE</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#collection">Collection</a>
+            <a href="#about">About</a>
+            <a href="#add-product">Add Product</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="hero" id="home">
+        <p class="tagline">STYLE THAT DEFINES YOU</p>
+
+        <h1>Elegant Fashion Boutique</h1>
+
+        <p>
+            Discover timeless fashion and express your unique style.
+            Explore our beautiful collection of dresses, ethnic wear
+            and accessories.
+        </p>
+
+        <a href="#collection" class="hero-btn">
+            Explore Collection
+        </a>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <div class="feature">
+            <h3>Elegant Designs</h3>
+            <p>Discover beautiful styles for every occasion.</p>
+        </div>
+
+        <div class="feature">
+            <h3>Latest Trends</h3>
+            <p>Explore fashionable and stylish collections.</p>
+        </div>
+
+        <div class="feature">
+            <h3>Unique Style</h3>
+            <p>Find outfits that express your personality.</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Collection Section -->
+        <section id="collection">
+
+            <h2>Our Fashion Collection</h2>
+
+            <p class="section-text">
+                Explore our exclusive collection of fashion favourites.
+            </p>
+
+            <!-- Category Filters -->
+            <div class="filters">
+                <button class="filter-btn active" data-filter="All">
+                    All
+                </button>
+
+                <button class="filter-btn" data-filter="Dresses">
+                    Dresses
+                </button>
+
+                <button class="filter-btn" data-filter="Ethnic Wear">
+                    Ethnic Wear
+                </button>
+
+                <button class="filter-btn" data-filter="Accessories">
+                    Accessories
+                </button>
+
+                <button class="filter-btn" data-filter="Wishlist">
+                    Wishlist
+                </button>
+            </div>
+
+            <!-- Products Display -->
+            <div id="productList" class="product-grid"></div>
+
+            <p id="counter" class="counter"></p>
+
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+
+            <h2>About Our Boutique</h2>
+
+            <p>
+                Elegant Fashion Boutique is a destination for people
+                who love fashion and creativity. We bring together
+                elegant designs, modern trends and timeless styles
+                to make every occasion special.
+            </p>
+
+        </section>
+
+        <!-- Add Product Section -->
+        <section id="add-product" class="add-section">
+
+            <h2>Add a Fashion Product</h2>
+
+            <p class="section-text">
+                Add a new product to your boutique collection.
+            </p>
+
+            <form id="productForm">
+
+                <label for="productName">Product Name</label>
+
+                <input
+                    type="text"
+                    id="productName"
+                    placeholder="Enter product name"
+                    required
+                >
+
+                <label for="category">Category</label>
+
+                <select id="category" required>
+                    <option value="Dresses">Dresses</option>
+                    <option value="Ethnic Wear">Ethnic Wear</option>
+                    <option value="Accessories">Accessories</option>
+                </select>
+
+                <label for="price">Price (₹)</label>
+
+                <input
+                    type="number"
+                    id="price"
+                    placeholder="Enter price"
+                    min="1"
+                    step="0.01"
+                    required
+                >
+
+                <label for="description">Description</label>
+
+                <textarea
+                    id="description"
+                    placeholder="Enter product description"
+                    required
+                ></textarea>
+
+                <button type="submit" class="submit-btn">
+                    Add to Collection
+                </button>
+
+            </form>
+
+            <p id="message" aria-live="polite"></p>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+
+        <h3>ÉLÉGANCE</h3>
+
+        <p>Wear your confidence. Express your elegance.</p>
+
+        <p>© 2026 Elegant Fashion Boutique. All Rights Reserved.</p>
+
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
+//CSS
+/* General Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fffaf7;
+    color: #403039;
+    line-height: 1.6;
+}
+
+/* Header */
+
+header {
+    background-color: #54283e;
+    color: white;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    font-family: Georgia, serif;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    color: #f6dce5;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #f6c6d8;
+}
+
+/* Hero Section */
+
+.hero {
+    text-align: center;
+    padding: 90px 20px;
+    background: linear-gradient(135deg, #f9e5e8, #f4d4dc);
+}
+
+.tagline {
+    color: #8b3a62;
+    letter-spacing: 4px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    color: #54283e;
+    font-family: Georgia, serif;
+    font-size: 43px;
+    margin: 15px 0;
+}
+
+.hero p {
+    max-width: 650px;
+    margin: 0 auto 25px;
+    color: #66515b;
+}
+
+.hero-btn {
+    display: inline-block;
+    background-color: #8b3a62;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.hero-btn:hover {
+    background-color: #682747;
+}
+
+/* Features Section */
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 35px 8%;
+}
+
+.feature {
+    background-color: white;
+    text-align: center;
+    padding: 25px 15px;
+    border: 1px solid #f0dce3;
+    border-radius: 8px;
+    border-bottom: 4px solid #b55b81;
+}
+
+.feature h3 {
+    color: #8b3a62;
+    margin-bottom: 8px;
+}
+
+.feature p {
+    color: #786b72;
+    font-size: 14px;
+}
+
+/* Main Section */
+
+main {
+    padding: 35px 8%;
+}
+
+section h2 {
+    color: #54283e;
+    font-family: Georgia, serif;
+    font-size: 30px;
+}
+
+.section-text {
+    color: #786b72;
+    margin: 8px 0 25px;
+}
+
+/* Filter Buttons */
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.filter-btn {
+    background-color: white;
+    color: #8b3a62;
+    border: 1px solid #8b3a62;
+    border-radius: 22px;
+    padding: 9px 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background-color: #8b3a62;
+    color: white;
+}
+
+/* Product Grid */
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.product-card {
+    background-color: white;
+    border: 1px solid #f0dce3;
+    border-top: 4px solid #b55b81;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 4px 15px #54283e0c;
+    transition: transform 0.3s;
+    overflow-wrap: anywhere;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card h3 {
+    color: #54283e;
+    margin-bottom: 10px;
+}
+
+.category {
+    display: inline-block;
+    background-color: #f9e5ec;
+    color: #8b3a62;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+
+.product-card p {
+    color: #786b72;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.product-card .price {
+    color: #8b3a62;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+/* Product Buttons */
+
+.card-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.card-actions button {
+    border: none;
+    padding: 9px 13px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.wishlist-btn {
+    background-color: #f9e5ec;
+    color: #8b3a62;
+}
+
+.wishlist-btn:hover {
+    background-color: #f2cbd9;
+}
+
+.delete-btn {
+    background-color: #fce4e4;
+    color: #a12d40;
+}
+
+.delete-btn:hover {
+    background-color: #f7caca;
+}
+
+/* Counter */
+
+.counter {
+    margin-top: 20px;
+    color: #786b72;
+    font-size: 14px;
+}
+
+.empty-message {
+    grid-column: 1 / -1;
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    color: #786b72;
+}
+
+/* About Section */
+
+.about-section {
+    background-color: #f9e5e8;
+    padding: 35px;
+    margin-top: 50px;
+    border-radius: 8px;
+}
+
+.about-section p {
+    margin-top: 15px;
+    color: #66515b;
+    line-height: 1.8;
+}
+
+/* Add Product Form */
+
+.add-section {
+    background-color: white;
+    padding: 30px;
+    border: 1px solid #f0dce3;
+    border-radius: 8px;
+    margin-top: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 650px;
+}
+
+form label {
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e2cbd5;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+}
+
+form textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+.submit-btn {
+    background-color: #8b3a62;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 13px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background-color: #682747;
+}
+
+#message {
+    margin-top: 12px;
+    color: #8b3a62;
+}
+
+/* Footer */
+
+footer {
+    background-color: #54283e;
+    color: white;
+    text-align: center;
+    padding: 28px 15px;
+    margin-top: 40px;
+}
+
+footer h3 {
+    color: #f6dce5;
+    letter-spacing: 4px;
+    margin-bottom: 8px;
+}
+
+footer p {
+    font-size: 13px;
+    margin: 5px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 850px) {
+    .product-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 550px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    main {
+        padding: 25px 5%;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .add-section {
+        padding: 20px;
+    }
+}
+//JAVASCRIPT
+/* Get HTML Elements */
+
+const form = document.getElementById("productForm");
+const nameInput = document.getElementById("productName");
+const categoryInput = document.getElementById("category");
+const priceInput = document.getElementById("price");
+const descriptionInput = document.getElementById("description");
+
+const productList = document.getElementById("productList");
+const counter = document.getElementById("counter");
+const message = document.getElementById("message");
+
+/* Store Products */
+
+let products = JSON.parse(
+    localStorage.getItem("boutiqueProducts")
+) || [
+    {
+        id: 1,
+        name: "Floral Summer Dress",
+        category: "Dresses",
+        price: 1299,
+        description: "A beautiful floral dress for casual outings.",
+        wishlist: false
+    },
+    {
+        id: 2,
+        name: "Traditional Silk Saree",
+        category: "Ethnic Wear",
+        price: 2499,
+        description: "An elegant saree for special occasions.",
+        wishlist: false
+    },
+    {
+        id: 3,
+        name: "Classic Handbag",
+        category: "Accessories",
+        price: 899,
+        description: "A stylish handbag for everyday use.",
+        wishlist: false
+    },
+    {
+        id: 4,
+        name: "Party Wear Gown",
+        category: "Dresses",
+        price: 1899,
+        description: "A beautiful gown for parties and celebrations.",
+        wishlist: false
+    },
+    {
+        id: 5,
+        name: "Designer Kurti",
+        category: "Ethnic Wear",
+        price: 999,
+        description: "A comfortable and stylish ethnic kurti.",
+        wishlist: false
+    },
+    {
+        id: 6,
+        name: "Fashion Earrings",
+        category: "Accessories",
+        price: 499,
+        description: "Elegant earrings to complete your look.",
+        wishlist: false
+    }
+];
+
+let currentFilter = "All";
+
+
+/* Create Product Function */
+
+function createProduct(name, category, price, description) {
+    return {
+        id: Date.now(),
+        name: name,
+        category: category,
+        price: price,
+        description: description,
+        wishlist: false
+    };
+}
+
+
+/* Add Product Function */
+
+function addProduct(name, category, price, description) {
+    products.push(
+        createProduct(name, category, price, description)
+    );
+
+    saveAndRender();
+}
+
+
+/* Wishlist Function */
+
+function toggleWishlist(id) {
+    products = products.map(product =>
+        product.id === id
+            ? { ...product, wishlist: !product.wishlist }
+            : product
+    );
+
+    saveAndRender();
+}
+
+
+/* Delete Product Function */
+
+function deleteProduct(id) {
+    products = products.filter(product => product.id !== id);
+
+    saveAndRender();
+}
+
+
+/* Filter Products Function */
+
+function getVisible() {
+
+    if (currentFilter === "Wishlist") {
+        return products.filter(product => product.wishlist);
+    }
+
+    if (currentFilter === "All") {
+        return products;
+    }
+
+    return products.filter(
+        product => product.category === currentFilter
+    );
+}
+
+
+/* Create Product Card Function */
+
+function createProductCard(product) {
+
+    const card = document.createElement("div");
+    card.className = "product-card";
+
+    const category = document.createElement("span");
+    category.className = "category";
+    category.textContent = product.category;
+
+    const name = document.createElement("h3");
+    name.textContent = product.name;
+
+    const description = document.createElement("p");
+    description.textContent = product.description;
+
+    const price = document.createElement("p");
+    price.className = "price";
+
+    price.textContent =
+        "₹" + product.price.toLocaleString("en-IN");
+
+    const actions = document.createElement("div");
+    actions.className = "card-actions";
+
+    const wishlistButton = document.createElement("button");
+    wishlistButton.className = "wishlist-btn";
+
+    wishlistButton.textContent = product.wishlist
+        ? "Remove from Wishlist"
+        : "Add to Wishlist";
+
+    wishlistButton.addEventListener("click", function () {
+        toggleWishlist(product.id);
+    });
+
+    const deleteButton = document.createElement("button");
+    deleteButton.className = "delete-btn";
+    deleteButton.textContent = "Delete";
+
+    deleteButton.addEventListener("click", function () {
+        deleteProduct(product.id);
+    });
+
+    actions.append(wishlistButton, deleteButton);
+
+    card.append(
+        category,
+        name,
+        description,
+        price,
+        actions
+    );
+
+    return card;
+}
+
+
+/* Render Products Function */
+
+function renderProducts() {
+
+    productList.innerHTML = "";
+
+    const visibleProducts = getVisible();
+
+    if (visibleProducts.length === 0) {
+
+        const empty = document.createElement("p");
+
+        empty.className = "empty-message";
+
+        empty.textContent =
+            "No products found in this category.";
+
+        productList.appendChild(empty);
+
+    } else {
+
+        visibleProducts.forEach(function (product) {
+
+            productList.appendChild(
+                createProductCard(product)
+            );
+
+        });
+    }
+
+    counter.textContent =
+        visibleProducts.length + " product(s) displayed";
+}
+
+
+/* Save and Render Function */
+
+function saveAndRender() {
+
+    localStorage.setItem(
+        "boutiqueProducts",
+        JSON.stringify(products)
+    );
+
+    renderProducts();
+}
+
+
+/* Form Submit Function */
+
+function handleSubmit(event) {
+
+    event.preventDefault();
+
+    const name = nameInput.value.trim();
+    const category = categoryInput.value;
+    const price = Number(priceInput.value);
+    const description = descriptionInput.value.trim();
+
+    if (
+        name === "" ||
+        description === "" ||
+        !Number.isFinite(price) ||
+        price <= 0
+    ) {
+        message.textContent =
+            "Please enter valid product details.";
+
+        return;
+    }
+
+    addProduct(name, category, price, description);
+
+    form.reset();
+
+    message.textContent =
+        "Product added successfully!";
+}
+
+
+/* Filter Button Function */
+
+function handleFilter(event) {
+
+    currentFilter = event.currentTarget.dataset.filter;
+
+    document.querySelectorAll(".filter-btn").forEach(
+        function (button) {
+
+            button.classList.toggle(
+                "active",
+                button.dataset.filter === currentFilter
+            );
+
+        }
+    );
+
+    renderProducts();
+}
+
+
+/* Connect Form Event */
+
+form.addEventListener("submit", handleSubmit);
+
+
+/* Connect Filter Events */
+
+document.querySelectorAll(".filter-btn").forEach(
+    function (button) {
+
+        button.addEventListener("click", handleFilter);
+
+    }
+);
+
+
+/* Display Products Initially */
+
+renderProducts();
